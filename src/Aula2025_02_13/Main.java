@@ -23,6 +23,12 @@ public class Main {
         cart1.addProduct(st1);
         cart1.addProduct(st2);
 
+        cart1.getContents();
+
+        System.out.println("Remoção do primeiro item da lista");
+        System.out.println();
+        cart1.removeProduct(tv1);
+        cart1.getContents();
 
 
 
