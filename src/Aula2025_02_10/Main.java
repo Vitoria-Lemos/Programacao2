@@ -1,6 +1,6 @@
 package Aula2025_02_10;
 
-public class Store {
+public class Main {
     public static void main(String[] args) {
 
         Product p1 = new Product("Geladeira",2996);
