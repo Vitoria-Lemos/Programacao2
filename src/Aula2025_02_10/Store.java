@@ -27,6 +27,9 @@ public class Store {
         cart2.addProduct(p5);
         cart2.addProduct(p6);
 
+        System.out.println("Segundo carrinho: ");
+        cart2.getContents();
+
 
 
 
