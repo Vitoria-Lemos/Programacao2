@@ -14,8 +14,9 @@ public class Store {
         cart1.addProduct(p1);
         cart1.addProduct(p2);
         cart1.addProduct(p3);
-        System.out.println(cart1.getItemCount());
+        cart1.removeProduct(p1);
         cart1.getContents();
+        System.out.println("Itens no carrinho 1: "+cart1.getItemCount());
 
 
         Product p4 = new Product("Liquidificador",200);
@@ -27,8 +28,10 @@ public class Store {
         cart2.addProduct(p5);
         cart2.addProduct(p6);
 
-        System.out.println("Segundo carrinho: ");
+        System.out.println();
+        System.out.println("Segundo carrinho:");
         cart2.getContents();
+        System.out.println("Itens no carrinho 2: "+cart2.getItemCount());
 
 
 
