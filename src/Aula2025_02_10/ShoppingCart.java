@@ -34,8 +34,8 @@ public class ShoppingCart {
 
     public void getContents() {
 
-        for(int i = 0; i < productList.size(); i++){
-            System.out.println(productList.get(i).getName() +": " +productList.get(i).getPrice());
+        for (Product product : productList) {
+            System.out.println(product.getName() + ": " + product.getPrice());
         }
 
     }
@@ -51,9 +51,9 @@ public class ShoppingCart {
     public double getTotalPrice() {
         double totalPrice = 0;
 
-        for(int i = 0; i < productList.size(); i++){
+        for (Product product : productList) {
 
-            totalPrice+= productList.get(i).getPrice();
+            totalPrice += product.getPrice();
         }
         return totalPrice;
     }
