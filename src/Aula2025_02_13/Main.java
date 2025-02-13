@@ -30,6 +30,9 @@ public class Main {
         cart1.removeProduct(tv1);
         cart1.getContents();
 
+        System.out.println("Total de itens: " + cart1.getItemCount());
+
+        System.out.println(tv1.getPrice());
 
 
 
