@@ -9,7 +9,7 @@ public class ShoppingCart {
 
     public ShoppingCart(int customerId) {
         this.customerId = customerId;
-        this.productList =  this.productList =  new ArrayList<>();
+        this.productList  =  new ArrayList<>();
     }
 
     public void setCustomerId(int customerId) {
@@ -34,9 +34,8 @@ public class ShoppingCart {
 
     public void getContents() {
 
-        for(int i = 0; i < productList.size(); i++){
-            System.out.println(productList.get(i).getBrand() +": " +productList.get(i).getPrice());
-
+        for (Product product : productList) {
+            System.out.println(product.getBrand() + ": " + product.getPrice());
         }
 
     }
@@ -52,9 +51,9 @@ public class ShoppingCart {
     public double getTotalPrice() {
         double totalPrice = 0;
 
-        for(int i = 0; i < productList.size(); i++){
+        for (Product product : productList) {
 
-            totalPrice+= productList.get(i).getPrice();
+            totalPrice += product.getPrice();
         }
         return totalPrice;
     }
