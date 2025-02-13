@@ -3,10 +3,12 @@ package Aula2025_02_13;
 public class Refrigerator extends Product{
     private int size;
 
-    public Refrigerator(String brand, double price) {
-        super(brand, price);
-    }
 
+
+    public Refrigerator(String brand, double price, int size) {
+        super(brand, price);
+        this.size = size;
+    }
 
     public int getSize() {
         return size;
