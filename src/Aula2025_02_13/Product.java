@@ -1,4 +1,4 @@
-package Exercicio2.exercicio01.exercicio01;
+package Aula2025_02_13;
 
 public class Product {
     private String brand;
