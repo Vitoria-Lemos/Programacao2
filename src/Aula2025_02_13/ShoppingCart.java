@@ -35,7 +35,7 @@ public class ShoppingCart {
     public void getContents() {
 
         for (Product product : productList) {
-            System.out.println(product.getBrand() + ": " + product.getPrice());
+            System.out.println(product.getBrand() + ": R$ " + product.getPrice());
         }
 
     }

@@ -30,9 +30,19 @@ public class Main {
         cart1.removeProduct(tv1);
         cart1.getContents();
 
+        Stove st3 = new Stove("Joaninha",560,4);
+
+
         System.out.println("Total de itens: " + cart1.getItemCount());
 
-        System.out.println(tv1.getPrice());
+
+        ShoppingCart cart2 = new ShoppingCart(2);
+        cart2.addProduct(st3);
+
+        System.out.println();
+        System.out.println("Carrinho 2");
+        cart2.getContents();
+
 
 
 
