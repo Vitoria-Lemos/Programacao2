@@ -1,28 +1,32 @@
 package Aula2025_02_17;
 
+import java.util.ArrayList;
+
 public abstract class Pessoa {
-    private  String name;
-    private double anulIncome;
+    private String nome;
+    private double rendaAnual;
 
-    public Pessoa(String name, double anulIncome) {
-        this.name = name;
-        this.anulIncome = anulIncome;
+    public Pessoa(String nome, double rendaAnual) {
+        this.nome = nome;
+        this.rendaAnual = rendaAnual;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getRendaAnual() {
+        return rendaAnual;
+    }
+
+    public void setRendaAnual(double rendaAnual) {
+        this.rendaAnual = rendaAnual;
     }
 
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getAnulIncome() {
-        return anulIncome;
-    }
-
-    public void setAnulIncome(double anulIncome) {
-        this.anulIncome = anulIncome;
-    }
+    public abstract double getTax(double rendaAnual);
 }
