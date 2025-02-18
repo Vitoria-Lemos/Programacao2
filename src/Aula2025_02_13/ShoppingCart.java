@@ -58,6 +58,15 @@ public class ShoppingCart {
         return totalPrice;
     }
 
+    public void getContent()
+    {
+        String result = "";
+        for (Product product : this.productList)
+        {
+           // result +=
+        }
+    }
+
 
 
 

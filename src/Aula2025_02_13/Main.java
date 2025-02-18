@@ -19,29 +19,11 @@ public class Main {
         cart1.addProduct(tv1);
         cart1.addProduct(tv2);
         cart1.addProduct(refri1);
-        cart1.addProduct(refri2);
         cart1.addProduct(st1);
-        cart1.addProduct(st2);
-
-        cart1.getContents();
-
-        System.out.println("Remoção do primeiro item da lista");
-        System.out.println();
-        cart1.removeProduct(tv1);
-        cart1.getContents();
-
-        Stove st3 = new Stove("Joaninha",560,4);
 
 
-        System.out.println("Total de itens: " + cart1.getItemCount());
 
 
-        ShoppingCart cart2 = new ShoppingCart(2);
-        cart2.addProduct(st3);
-
-        System.out.println();
-        System.out.println("Carrinho 2");
-        cart2.getContents();
 
 
 
