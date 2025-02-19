@@ -41,7 +41,6 @@ public class Main {
 
 
                 l.addPessoa(pessoa);
-                l.addTax(pessoa.getTax(pessoa.getRendaAnual()));
 
             }
             else if( type.equals("c"))
@@ -60,7 +59,7 @@ public class Main {
 
 
                 l.addPessoa(pessoa);
-                l.addTax(pessoa.getTax(pessoa.getRendaAnual()));
+
             }
 
 
@@ -69,7 +68,7 @@ public class Main {
 
         l.getContents();
         System.out.println();
-        System.out.println("TOTAL TAXES: $" + String.format(Locale.US, "%.2f", l.getTotalTax()));
+        System.out.println("TOTAL TAXES: $" + String.format(Locale.US, "%.2f", l.getTax()));
         scan.close();
     }
 

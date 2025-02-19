@@ -6,7 +6,7 @@ import java.util.Locale;
 public class Leao {
     //private static PrintStream out;
     private ArrayList<Pessoa> listaPessoas;
-    private double totalTax;
+
 
 
     public Leao() {
@@ -29,11 +29,15 @@ public class Leao {
         }
     }
 
-    public void addTax(double t) {
-        this.totalTax += t;
-    }
+    public double getTax()
+    {
+        double tax = 0;
+        for(Pessoa pessoa : listaPessoas)
+        {
+            tax += pessoa.getTax(pessoa.getRendaAnual());
+        }
 
-    public double getTotalTax() {
-        return this.totalTax;
+
+         return tax;
     }
 }
