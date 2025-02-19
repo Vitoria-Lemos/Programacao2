@@ -1,6 +1,7 @@
 package Aula2025_02_17;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Leao {
     //private static PrintStream out;
@@ -23,8 +24,7 @@ public class Leao {
         for(Pessoa pessoa : listaPessoas)
         {
 
-
-            System.out.println(pessoa.getNome()+": $ "+pessoa.getTax(pessoa.getRendaAnual()));
+            System.out.println(pessoa.getNome()+": $ "+ String.format(Locale.US,"%.2f", pessoa.getTax(pessoa.getRendaAnual())));
 
         }
     }

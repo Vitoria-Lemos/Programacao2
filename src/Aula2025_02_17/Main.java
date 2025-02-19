@@ -1,7 +1,7 @@
 package Aula2025_02_17;
 
 import java.util.Scanner;
-
+import java.util.Locale;
 public class Main {
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class Main {
         //criando um objeto para adicionar todas as pessoas no sistema Leão come-come
         Leao l = new Leao();
 
-        System.out.println("Enter the number of tax payers:");
+        System.out.print("Enter the number of tax payers: ");
         n = scan.nextInt();
         scan.nextLine();
 
@@ -69,7 +69,7 @@ public class Main {
 
         l.getContents();
         System.out.println();
-        System.out.println("TOTAL TAXES: $" + l.getTotalTax());
+        System.out.println("TOTAL TAXES: $" + String.format(Locale.US, "%.2f", l.getTotalTax()));
         scan.close();
     }
 
