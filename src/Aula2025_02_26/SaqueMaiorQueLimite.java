@@ -6,6 +6,7 @@ public class SaqueMaiorQueLimite extends Exception{
     private double amount;
 
     public SaqueMaiorQueLimite(double withdrawLimit, double amount) {
+        super("Withdraw Error: The amount exceeds withdraw limit");
         this.withdrawLimit = withdrawLimit;
         this.amount = amount;
     }

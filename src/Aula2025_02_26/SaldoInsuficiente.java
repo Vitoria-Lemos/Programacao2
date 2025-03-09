@@ -5,6 +5,7 @@ public class SaldoInsuficiente extends Exception{
     private double withdraw;
 
     public SaldoInsuficiente(double amount, double withdraw) {
+        super("Withdraw Error: Not enough balance");
         this.amount = amount;
         this.withdraw = withdraw;
     }

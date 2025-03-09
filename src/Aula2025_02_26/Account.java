@@ -7,11 +7,7 @@ public class Account {
     private double withdrawLimit;
 
 
-    public Account(int number, String holder, double balance, double withdrawLimit) {
-        this.number = number;
-        this.holder = holder;
-        this.balance = balance;
-        this.withdrawLimit = withdrawLimit;
+    public Account() {
     }
 
     public int getNumber() {
@@ -53,35 +49,30 @@ public class Account {
 
     }
 
-    public void withdraw(double amount)
+    public void withdraw(double amount) throws SaldoInsuficiente, SaqueMaiorQueLimite
     {
-
-        try {
-            if(amount < getBalance())
+            if(amount > getBalance() && amount < getWithdrawLimit())
             {
                 throw new SaldoInsuficiente(amount,getBalance());
             }
-            else if(getWithdrawLimit() < amount)
+            if(getWithdrawLimit() < amount)
             {
                 throw new SaqueMaiorQueLimite(getWithdrawLimit(),amount);
             }
-            else
-            {
-                this.balance -= amount;
-            }
 
+            this.balance -= amount;
+            System.out.printf(toString());
 
-
-        }
-        catch ( SaldoInsuficiente | SaqueMaiorQueLimite e)
-        {
-            System.out.println("Aconteceu um erro");
-        }
 
     }
 
-
-
-
-
+    public String toString() {
+        return  "New balance: " + this.getBalance() ;
+    }
 }
+
+
+
+
+
+
