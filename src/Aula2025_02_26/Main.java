@@ -29,7 +29,7 @@ public class Main {
         try{
             account.withdraw(scan.nextDouble());
         }
-        catch (SaqueMaiorQueLimite |SaldoInsuficiente  e) {
+        catch(SaqueMaiorQueLimite |SaldoInsuficiente  e) {
             System.out.printf(e.getMessage());
         }
 
