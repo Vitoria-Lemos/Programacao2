@@ -25,9 +25,11 @@ public class Main {
         account.setWithdrawLimit(scan.nextDouble());
 
         System.out.print("Enter amount for withdraw: ");
+
         try{
             account.withdraw(scan.nextDouble());
-        } catch (SaqueMaiorQueLimite |SaldoInsuficiente  e) {
+        }
+        catch (SaqueMaiorQueLimite |SaldoInsuficiente  e) {
             System.out.printf(e.getMessage());
         }
 
